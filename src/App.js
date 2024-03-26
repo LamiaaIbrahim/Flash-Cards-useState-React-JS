@@ -47,9 +47,9 @@ function FlashCards() {
   const [selectedId, setSelectedId] = useState(null);
 
   function handleClick(id) {
-    console.log("line 50", id);
-    setSelectedId(id);
-    console.log("line 52", id);
+    
+    setSelectedId(id !== selectedId ? id : null);
+
   }
   return (
     <div className="flashcards">
